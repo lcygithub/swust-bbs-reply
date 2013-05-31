@@ -77,8 +77,8 @@ def reply(contents,start,end, username, client):
                 post_data["atc_content"] = make_content(contents)
                 rep = client.post(post_url,data=post_data)
                 print rep.text.encode(rep.encoding)
-            except AttributeError as e:
-                print e
+            except:
+                print "something err."
         time.sleep(5)
 
 def ToReply(contents, username, client):
@@ -96,8 +96,8 @@ def ToReply(contents, username, client):
         post_data["atc_content"] = make_content(contents)
         rep = client.post(post_url,data=post_data)
         print rep.text.encode(rep.encoding)
-    except AttributeError as e:
-        print e
+    except:
+        print "something err."
     
 if __name__ == '__main__':
     print sys.argv
