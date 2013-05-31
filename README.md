@@ -1,6 +1,8 @@
 脚本使用python语言编写，只要用到了requests、bs4等模块，在写脚本前看了HTTP权威指南这本书，很受益。
 
-用法： python swust-bbs-reply.py start(起始帖子id) end(结束贴子id) content(发帖内容)
+用法： 
+   
+    python swust-bbs-reply.py start(起始帖子id) end(结束贴子id) content(发帖内容)
 
     eg： python swust-bbs-reply.py 50 60 顶起！
     
